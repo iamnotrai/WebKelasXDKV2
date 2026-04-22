@@ -1,0 +1,195 @@
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>X DKV 2</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- navbar -->
+  <nav class="navbar">
+  <h1 class="logo">X DKV 2 Class</h1>
+
+  <!-- tombol hamburger -->
+  <div class="menu-toggle" onclick="toggleMenu()">
+    ☰
+  </div>
+
+  <ul class="ul-navbar" id="navMenu">
+    <li class="li-navbar"><a href="#home">Home</a></li>
+    <li class="li-navbar"><a href="#pengurus">Struktur Kelas</a></li>
+    <li class="li-navbar"><a href="#anggota">Anggota Kelas</a></li>
+    <li class="li-navbar"><a href="#sosmed">Sosial Media</a></li>
+  </ul>
+</nav>
+
+  <!-- home -->
+  <section id="home" class="intro">
+    <h2 class="animate">Welcome to our Website</h2>
+    <p class="animate">Kelas X DKV 2 🌊</p>
+  </section>
+
+  <!-- pengurus kelas -->
+  <section id="pengurus">
+  <h2 class="animate">Struktur Kelas</h2>
+  <div class="pengurus-container">
+
+    <div class="pengurus-card" onclick="showModal('Wali Kelas', 'Pak Kusuma Jaya', ['wali.png'])">
+      <img src="wali.png">
+      <h3>Wali Kelas</h3>
+      <p>Pak Kusuma Jaya</p>
+    </div>
+
+    <div class="pengurus-card" onclick="showModal('Ketua', 'Reza', ['ketua.png'])">
+      <img src="ketua.png">
+      <h3>Ketua</h3>
+      <p>Reza</p>
+    </div>
+
+    <div class="pengurus-card" onclick="showModal('Wakil', 'Marsanda', ['wakil.png'])">
+      <img src="wakil.png">
+      <h3>Wakil</h3>
+      <p>Marsanda</p>
+    </div>
+
+    <div class="pengurus-card" onclick="showModal('Bendahara', 'Erfan & Radit', ['erfan.png','radit ganteng kek jeprinikol.jpg'])">
+      <div class="double-img">
+        <img src="erfan.png">
+        <img src="radit ganteng kek jeprinikol.jpg">
+      </div>
+      <h3>Bendahara</h3>
+      <p>Erfan & Radit</p>
+    </div>
+
+    <div class="pengurus-card" onclick="showModal('Sekretaris', 'Naila & Dita', ['Naila.png','Dita.png'])">
+      <div class="double-img">
+        <img src="Naila.png">
+        <img src="Dita.png">
+      </div>
+      <h3>Sekretaris</h3>
+      <p>Naila & Dita</p>
+    </div>
+
+    <div class="pengurus-card" onclick="showModal('Kebersihan', 'Titania & Desti', ['titania.png','desti.png'])">
+      <div class="double-img">
+        <img src="titania.png">
+        <img src="desti.png">
+      </div>
+      <h3>Kebersihan</h3>
+      <p>Titania & Desti</p>
+    </div>
+
+    <div class="pengurus-card" onclick="showModal('Kerohanian', 'Dias & Cantika', ['dias.png','cantika.png'])">
+      <div class="double-img">
+        <img src="dias.png">
+        <img src="cantika.png">
+      </div>
+      <h3>Kerohanian</h3>
+      <p>Dias & Cantika</p>
+    </div>
+
+    <div class="pengurus-card" onclick="showModal('Keamanan', 'Tiara & Dandi', ['tiara.png','Dandi.jpg'])">
+      <div class="double-img">
+        <img src="tiara.png">
+        <img src="Dandi.jpg">
+      </div>
+      <h3>Keamanan</h3>
+      <p>Tiara & Dandi</p>
+    </div>
+
+    <div class="pengurus-card" onclick="showModal('Sosmed', 'Rinjani', ['rinjani.png'])">
+      <img src="rinjani.png">
+      <h3>Sosmed</h3>
+      <p>Rinjani</p>
+    </div>
+
+  </div>
+</section>
+
+<section id="anggota">
+  <h2 class="animate">Anggota Kelas</h2>
+  <div class="card-container">
+
+    <div class="card"><img src="muchlis.png"><p>Muchlis</p></div>
+    <div class="card"><img src="andre.png"><p>Andre</p></div>
+    <div class="card"><img src="belinda.png"><p>Belinda</p></div>
+    <div class="card"><img src="cahya.png"><p>Cahya</p></div>
+    <div class="card"><img src="cantika.png"><p>Cantika</p></div>
+    <div class="card"><img src="desti.png"><p>Desti</p></div>
+    <div class="card"><img src="Dita.png"><p>Dita</p></div>
+    <div class="card"><img src="ega.png"><p>Ega</p></div>
+    <div class="card"><img src="angelica.png"><p>Angelica</p></div>
+    <div class="card"><img src="Erista.png"><p>Eristha</p></div>
+    <div class="card"><img src="evelyn.png"><p>Evelyn</p></div>
+    <div class="card"><img src="ketua.png"><p>Reza</p></div>
+    <div class="card"><img src="fadlih.png"><p>Fadli Hardianto</p></div>
+    <div class="card"><img src="fadlid.png"><p>Fadli Dandi</p></div>
+    <div class="card"><img src="faisal.png"><p>Faisal</p></div>
+    <div class="card"><img src="fathiyya.png"><p>Fathiyya</p></div>
+    <div class="card"><img src="hafifah.png"><p>Hafifah</p></div>
+    <div class="card"><img src="keyla.png"><p>Keyla</p></div>
+    <div class="card"><img src="ayu.png"><p>Khairunissa</p></div>
+    <div class="card"><img src="raffi.png"><p>Raffi</p></div>
+    <div class="card"><img src="andi.png"><p>Suhandi</p></div>
+    <div class="card"><img src="wakil.png"><p>Marshanda</p></div>
+    <div class="card"><img src="dias.png"><p>Dias</p></div>
+    <div class="card"><img src="aji.png"><p>Aji</p></div>
+    <div class="card"><img src="Erfan.png"><p>Erfan</p></div>
+    <div class="card"><img src="radit ganteng kek jeprinikol.jpg"><p>Raditya</p></div>
+    <div class="card"><img src="nadine.png"><p>Nadine</p></div>
+    <div class="card"><img src="Naila.png"><p>Naila</p></div>
+    <div class="card"><img src="Nazela.png"><p>Nazela</p></div>
+    <div class="card"><img src="putria.png"><p>Putri Ari</p></div>
+    <div class="card"><img src="putrio.png"><p>Putri Oktaviani</p></div>
+    <div class="card"><img src="Queen.png"><p>Queen</p></div>
+    <div class="card"><img src="rayi.png"><p>Rayi</p></div>
+    <div class="card"><img src="rinjani.png"><p>Rinjani</p></div>
+    <div class="card"><img src="sandy.png"><p>Shandy</p></div>
+    <div class="card"><img src="syaqira.png"><p>Syaqira</p></div>
+    <div class="card"><img src="fathir.png"><p>Fathir</p></div>
+    <div class="card"><img src="tiara.png"><p>Tiara</p></div>
+    <div class="card"><img src="titania.png"><p>Titania</p></div>
+    <div class="card"><img src="trisna.png"><p>Trisna</p></div>
+    <div class="card"><img src="yazriel.png"><p>Yazriel</p></div>
+
+  </div>
+</section>
+
+  <!-- Foto -->
+   <section id="foto">
+    <h2 class="Animate"></h2>
+   </section>
+
+  <!-- sosmed -->
+  <section id="sosmed">
+    <h2 class="animate">Sosial Media</h2>
+    <a href="https://www.instagram.com/xdekavie2/" target="_blank">
+      <img src="instagram.webp" alt="Instagram" class="sosmed-logo">
+    </a>
+  </section>
+
+  <!-- modal -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span onclick="closeModal()" class="close">&times;</span>
+      <h3 id="modal-title"></h3>
+      <img id="modal-img" src="" alt="foto">
+      <p id="modal-text"></p>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <div class="container-footer">
+    <ul class="ul-footer">
+      <h1 class="h1-footer">SMKN 2 Cikarang Barat</h1>
+      <h1 class="h1-footer">Made with Hands for X DKV 2</h1>
+      <h1 class="h1-footer">by Rayi Ramdahan :P</h1>
+    </ul>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
