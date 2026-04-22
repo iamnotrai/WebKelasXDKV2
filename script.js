@@ -18,6 +18,13 @@ window.addEventListener('load', () => {
   handleScroll();
 });
 
+window.addEventListener("click", (e) => {
+  const modal = document.getElementById("modal");
+  if (e.target === modal) {
+    modal.style.display = "none";
+  }
+});
+
 // reset animasi pas klik navbar + smooth scroll
 const navLinks = document.querySelectorAll('.navbar a');
 
@@ -39,6 +46,7 @@ navLinks.forEach(link => {
         }, 150);
       });
     }
+    navMenu.classList.remove("active");
   });
 });
 
@@ -58,8 +66,6 @@ function showModal(jabatan, nama, fotos) {
   fotos.forEach(foto => {
     const img = document.createElement("img");
     img.src = foto;
-    img.style.width = "120px";
-    img.style.margin = "5px";
     imgContainer.appendChild(img);
   });
 }
@@ -70,3 +76,12 @@ const navMenu = document.querySelector(".ul-navbar");
 menuToggle.addEventListener("click", () => {
   navMenu.classList.toggle("active");
 });
+
+function toggleMenu() {
+  const menu = document.getElementById("navMenu");
+  menu.classList.toggle("active");
+}
+
+function closeModal() {
+  document.getElementById("modal").style.display = "none";
+}

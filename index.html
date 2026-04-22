@@ -11,10 +11,10 @@
 
   <!-- navbar -->
   <nav class="navbar">
-  <h1 class="logo">X DKV 2 Class</h1>
+  <img src="logo.png" class="logo">
 
   <!-- tombol hamburger -->
-  <div class="menu-toggle" onclick="toggleMenu()">
+  <div class="menu-toggle">
     ☰
   </div>
 
@@ -28,9 +28,11 @@
 
   <!-- home -->
   <section id="home" class="intro">
-    <h2 class="animate">Welcome to our Website</h2>
-    <p class="animate">Kelas X DKV 2 🌊</p>
-  </section>
+  <h2 class="animate">Welcome to our Website</h2>
+  <p class="animate">Kelas X DKV 2 🌊</p>
+
+  <div class="scroll-down" onclick="document.querySelector('#pengurus').scrollIntoView({behavior:'smooth'})"></div>
+</section>
 
   <!-- pengurus kelas -->
   <section id="pengurus">
@@ -91,10 +93,10 @@
       <p>Dias & Cantika</p>
     </div>
 
-    <div class="pengurus-card" onclick="showModal('Keamanan', 'Tiara & Dandi', ['tiara.png','Dandi.jpg'])">
+    <div class="pengurus-card" onclick="showModal('Keamanan', 'Tiara & Dandi', ['tiara.png','fadlid.png'])">
       <div class="double-img">
         <img src="tiara.png">
-        <img src="Dandi.jpg">
+        <img src="fadlid.png">
       </div>
       <h3>Keamanan</h3>
       <p>Tiara & Dandi</p>
@@ -146,7 +148,7 @@
     <div class="card" onclick="showModal('Anggota','Putri Ari',['putria.png'])"><img src="putria.png"><p>Putri Ari</p></div>
     <div class="card" onclick="showModal('Anggota','Putri Oktaviani',['putrio.png'])"><img src="putrio.png"><p>Putri Oktaviani</p></div>
     <div class="card" onclick="showModal('Anggota','Queen',['Queen.png'])"><img src="Queen.png"><p>Queen</p></div>
-    <div class="card" onclick="showModal('Anggota','Rayi',['rayi.png'])"><img src="rayi.png"><p>Rayi</p></div>
+    <div class="card" onclick="showModal('Anggota','Rayi',['rayi.jpg'])"><img src="rayi.jpg"><p>Rayi</p></div>
     <div class="card" onclick="showModal('Anggota','Rinjani',['rinjani.png'])"><img src="rinjani.png"><p>Rinjani</p></div>
     <div class="card" onclick="showModal('Anggota','Shandy',['sandy.png'])"><img src="sandy.png"><p>Shandy</p></div>
     <div class="card" onclick="showModal('Anggota','Syaqira',['syaqira.png'])"><img src="syaqira.png"><p>Syaqira</p></div>
@@ -177,7 +179,7 @@
     <div class="modal-content">
       <span onclick="closeModal()" class="close">&times;</span>
       <h3 id="modal-title"></h3>
-      <img id="modal-img" src="" alt="foto">
+      <div id="modal-img"></div>
       <p id="modal-text"></p>
     </div>
   </div>
@@ -187,7 +189,7 @@
     <ul class="ul-footer">
       <h1 class="h1-footer">SMKN 2 Cikarang Barat</h1>
       <h1 class="h1-footer">Made with Hands for X DKV 2</h1>
-      <h1 class="h1-footer">by Rayi Ramdahan :P</h1>
+      <h1 class="h1-footer">Shoutout to: Rayi for Website, Raditya for Photos, and Marsanda for the Logo :P</h1>
     </ul>
   </div>
 
