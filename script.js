@@ -43,26 +43,26 @@ navLinks.forEach(link => {
 });
 
 // modal (ditambah close kalau klik luar)
-function showModal(jabatan, nama, foto) {
+function showModal(jabatan, nama, fotos) {
   const modal = document.getElementById("modal");
   modal.style.display = "flex";
 
   document.getElementById("modal-title").innerText = jabatan;
   document.getElementById("modal-text").innerText = nama;
-  document.getElementById("modal-img").src = foto;
-}
 
-function closeModal() {
-  document.getElementById("modal").style.display = "none";
-}
+  const imgContainer = document.getElementById("modal-img");
+  
+  // reset dulu
+  imgContainer.innerHTML = "";
 
-// klik luar modal = close
-window.addEventListener('click', (e) => {
-  const modal = document.getElementById('modal');
-  if (e.target === modal) {
-    closeModal();
-  }
-});
+  fotos.forEach(foto => {
+    const img = document.createElement("img");
+    img.src = foto;
+    img.style.width = "120px";
+    img.style.margin = "5px";
+    imgContainer.appendChild(img);
+  });
+}
 
 const menuToggle = document.querySelector(".menu-toggle");
 const navMenu = document.querySelector(".ul-navbar");
