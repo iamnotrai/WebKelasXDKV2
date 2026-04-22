@@ -239,3 +239,16 @@ section {
     font-size: 24px;
   }
 }
+
+@media (max-width: 768px) {
+
+  .navbar ul {
+    display: none !important;
+  }
+
+  .navbar ul.active {
+    display: flex !important;
+    flex-direction: column;
+  }
+
+}
